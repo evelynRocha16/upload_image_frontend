@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <form class="upload" id="formUpload">
+        <label for="nameInput" class="labelName">Insira o nome do arquivo:</label>
+        <input type="text" id="nameInput" name="nameInput" />
+        <label class="labelFile">Arquivo:</label>
+        <label for="fileInput" id="labelFile">Selecione um arquivo</label>
+        <input type="file" id="fileInput" name="fileInput" accept="image/*" />
+        <button>enviar foto</button>
+    </form>
+
+    <div class="images">
+        <div>
+            <h4>Original</h4>
+            <img id="original">
+          </div>
+          
+          
+          <div>
+            <h4>Resized</h4>
+            <img id="resized">
+          </div>
+    </div>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
